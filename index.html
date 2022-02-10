@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Egg Boundary</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="title">
+      <div id="title1">
+      <h1>EGG BOUNDARY</h1>
+      <br>
+      Arrow keys to play, Space to jump<br><br><br>
+      </div>
+      <span id="score"></span>
+    </div>
+    <div id="countdown" style="display:none;">0.00s</div>
+    <div id="wireframetoggle">
+      <div class="inner">
+      Wireframe:
+    <input type="checkbox" id="isWireframe" onchange="changeWireframe(this.checked)"><br><br>
+    Shiny: <input type='checkbox' id="isBasic" onchange="changeMaterial(this.checked)" checked="true"><Br><Br>
+    Super Wireframe: <button onclick="alert('This button will make it easier to see objects in wireframe, but it requires a reload. Press OK now.');window.location.href='https://eggboundary.tussiez.repl.co?basic'">Go</button>
+    </div>
+    </div>
+    <div class="centered">
+    <a href="javascript:" style="color:white;" onclick="startGame();this.style.display='none'">Click me to start</a>
+    </div>
+    <span id="death_message" style="color:white;position:absolute;z-index:999;left:40%;top:48%;"></span>
+    
+   <br> <span id="dist" style="display:none;"></span>
+    <script src="easyscript.js"></script> <!--backwards compatibility, old code -->
+    <script src="tween.js"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

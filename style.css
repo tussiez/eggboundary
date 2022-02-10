@@ -1,0 +1,62 @@
+html {
+  height:100%;
+  width:100%;
+  overflow:hidden;
+}
+body {
+  margin:0px;
+  padding:0px;
+  color:white;
+  background-color:black;
+  font-family:verdana;
+}
+#title{
+  z-index:100;
+  position:absolute;
+  top:1%;
+  left:1%;
+}
+#wireframetoggle{
+  background-color:darkgray;
+  border-radius:5px;
+  width:20%;
+  z-index:100;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+canvas {
+  z-index: 1;
+}
+
+.loading {
+  height: 50%;
+  width: 50%;
+  background-color: green;
+  display: block;
+  border-radius: 50%;
+}
+
+.centered {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  height: 20px;
+  width: 200px;
+  color: white;
+  z-index: 100;
+  padding: 4px;
+}
+.inner{
+  padding:8px;
+  margin:8px;
+}
+#countdown{
+  z-index:9999;
+  position:absolute;
+  top:5%;
+  left:49%;
+  color:green;
+}
